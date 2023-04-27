@@ -102,14 +102,13 @@ nav {
 
 .video-gallery {
   display: flex;
+  flex-direction: row;
   width: fit-content;
   white-space: nowrap;
   overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px;
-  flex-direction: row;
-}
-
+	
 video-wrapper {
   display: flex;
   flex-direction: row;

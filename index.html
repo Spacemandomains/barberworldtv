@@ -38,13 +38,17 @@
         max-width: 100%;
       }
       
-      /* Larger square for the first video container */
+      /* Largest container for the first video */
+      .grid-item:first-child {
+        grid-column: 1 / -1; /* Span all columns */
+      }
+
       .grid-item:first-child .video-container {
         padding-bottom: 0; /* No padding bottom */
       }
 
       .grid-item:first-child .video-container iframe {
-        height: 560px; /* Height for Video 1 */
+        height: 600px; /* Height for Video 1 */
       }
     </style>
   </head>

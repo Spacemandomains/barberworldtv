@@ -45,3 +45,82 @@ nav {
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold
+		
+		.video-gallery {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.video-slider {
+	display: flex;
+	width: 400%;
+	animation: slide 10s infinite;
+}
+
+.video-player {
+	flex: 1 0 0;
+	margin-right: 10px;
+}
+
+.video-player:last-child {
+	margin-right: 0;
+}
+
+.video-player video {
+	width: 100%;
+}
+
+.video-nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.video-nav button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 30px;
+	color: #fff;
+	padding: 0 10px;
+}
+
+.video-nav button:hover {
+	color: #e50914;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-100%);
+	}
+	45% {
+		transform: translateX(-100%);
+	}
+	50% {
+		transform: translateX(-200%);
+	}
+	70% {
+		transform: translateX(-200%);
+	}
+	75% {
+		transform: translateX(-300%);
+	}
+	95% {
+		transform: translateX(-300%);
+	}
+	100% {
+		transform: translateX(-400%);
+	}
+}
+

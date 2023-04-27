@@ -1,136 +1,133 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
+		* {
+		  box-sizing: border-box;
+		  margin: 0;
+		  padding: 0;
+		}
 
-/* Navbar styles go here */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
+		body {
+		  font-family: Arial, sans-serif;
+		  font-size: 16px;
+		  line-height: 1.5;
+		}
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #e50914;
-  text-decoration: none;
-}
+		/* Navbar styles go here */
+		.navbar {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  padding: 20px;
+		}
 
-.nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+		.logo {
+		  font-size: 24px;
+		  font-weight: bold;
+		  color: #e50914;
+		  text-decoration: none;
+		}
 
-.nav-menu li {
-  margin-left: 20px;
-}
+		.nav-menu {
+		  list-style: none;
+		  display: flex;
+		  justify-content: flex-end;
+		  align-items: center;
+		}
 
-.nav-menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px;
-  transition: all 0.3s ease-in-out;
-}
+		.nav-menu li {
+		  margin-left: 20px;
+		}
 
-.nav-menu li a:hover {
-  background-color: #e50914;
-  border-radius: 3px;
-}
+		.nav-menu li a {
+		  color: #fff;
+		  text-decoration: none;
+		  font-size: 18px;
+		  font-weight: bold;
+		  padding: 10px;
+		  transition: all 0.3s ease-in-out;
+		}
 
-/* Video player styles go here */
-.video-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0;
-}
+		.nav-menu li a:hover {
+		  background-color: #e50914;
+		  border-radius: 3px;
+		}
 
-.video-player {
-  width: calc(33.33% - 10px);
-  margin-bottom: 20px;
-}
+		/* Video player styles go here */
+		.video-container {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		  margin: 20px 0;
+		  position: relative;
+		}
 
-.video-player iframe {
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  position: relative;
-}
+		.video-slider {
+		  position: absolute;
+		  top: 50%;
+		  left: 0;
+		  transform: translateY(-50%);
+		  display: flex;
+		  width: 100%;
+		  overflow-x: scroll;
+		  scroll-behavior: smooth;
+		  scrollbar-width: none;
+		  -ms-overflow-style: none;
+		}
 
-.video-player iframe,
-.video-player object,
-.video-player embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+		.video-slider::-webkit-scrollbar {
+		  display: none;
+		}
 
-/* Trending now styles go here */
-.row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
+		.video-player {
+		  width: calc(33.33% - 10px);
+		  margin-bottom: 20px;
+		}
 
-.column {
-  width: 49%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+		.video-player iframe {
+		  width: 100%;
+		  height: 0;
+		  padding-bottom: 56.25%;
+		  position: relative;
+		}
 
-.column img {
-  width: 100%;
-  height: auto;
-}
+		.video-player iframe,
+		.video-player object,
+		.video-player embed {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		}
 
-.column-title {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
+		.video-nav {
+		  position: absolute;
+		  top: 50%;
+		  right: 0;
+		  transform: translateY(-50%);
+		  display: flex;
+		  align-items: center;
+		  padding: 10px;
+		  background-color: rgba(0, 0, 0, 0.5);
+		  border-radius: 5px;
+		  cursor: pointer;
+		  transition: all 0.3s ease-in-out;
+		}
 
-/* Footer styles go here */
-footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
-  margin-top: 20px;
-}
+		.video-nav:hover {
+		  background-color: rgba(0, 0, 0, 0.8);
+		}
 
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
+		.video-nav i {
+		  font-size: 24px;
+		  color: #fff;
+		  margin-right: 10px;
+		}
 
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
+		/* Trending now styles go here */
+		.row {
+		  display: flex;
+		  justify-content: space-between;
+		  margin-bottom: 20px;
+		}
 
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-footer p {
-  font-size: 14px;
-  margin-top: 10px;
-}
+		

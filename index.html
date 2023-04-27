@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <title>Netflix-like webpage with video scrolling gallery</title>
     <style>
+      /* CSS styles for the button */
+      .button {
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-color: #555;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 10px;
+        margin-right: 20px;
+        
       /* CSS styles for the video gallery container */
       .video-gallery {
         display: flex;
@@ -28,6 +42,8 @@
     </style>
   </head>
   <body>
+    <div class="container">
+      <a href="#" class="button">Button</a>
     <div class="video-gallery">
       <div class="video-item">
         <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_1"></iframe>

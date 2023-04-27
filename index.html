@@ -37,6 +37,11 @@
       .grid-item img {
         max-width: 100%;
       }
+      
+      /* Larger square for the first video container */
+      .grid-item:first-child .video-container {
+        padding-bottom: 100%; /* 1:1 aspect ratio */
+      }
     </style>
   </head>
   <body>
@@ -44,7 +49,7 @@
     <div class="grid-container">
       <div class="grid-item">
         <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="560" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
         </div>
         <h2>Video Title 1</h2>
       </div>

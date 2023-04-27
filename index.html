@@ -2,16 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Netflix-like webpage with video scrolling gallery</title>
+    <title>Video gallery with left-align button</title>
     <style>
-      
       /* CSS styles for the container */
       .container {
         display: flex;
-        align-items: center;
-        justify-content: space-between; /* align button to left and video gallery to right */
-        margin: 20px 0;
-        
+        flex-direction: column;
+        margin: 20px;
+      }
+
       /* CSS styles for the button */
       .button {
         display: block;
@@ -24,14 +23,22 @@
         text-align: center;
         line-height: 50px;
         border-radius: 10px;
-        margin-right: 20px;
-        
+        margin-bottom: 10px;
+      }
+
       /* CSS styles for the video gallery container */
-      .video-gallery {
+      .video-gallery-container {
         display: flex;
-        overflow-x: scroll;
+        overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
+        margin-bottom: 20px;
+      }
+
+      /* CSS styles for the video gallery */
+      .video-gallery {
+        display: flex;
+        flex-wrap: nowrap;
         width: 100%;
       }
 
@@ -39,27 +46,56 @@
       .video-item {
         flex: 0 0 auto;
         scroll-snap-align: start;
-        width: 48%;
+        width: calc(100% / 12);
+        padding: 5px;
       }
 
       /* CSS styles for the embedded YouTube video */
       .youtube-video {
-        width: 560px;
-        height: 315px;
+        width: 100%;
+        height: 100%;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <a href="#" class="button">Button</a>
-    <div class="video-gallery">
-      <div class="video-item">
-        <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_1"></iframe>
+      <a href="#" class="button">Button 1</a>
+      <div class="video-gallery-container">
+        <div class="video-gallery">
+          <div class="video-item">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_1"></iframe>
+          </div>
+          <div class="video-item">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_2"></iframe>
+          </div>
+          <!-- add more video items here -->
+        </div>
       </div>
-      <div class="video-item">
-        <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_2"></iframe>
+      <a href="#" class="button">Button 2</a>
+      <div class="video-gallery-container">
+        <div class="video-gallery">
+          <div class="video-item">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_3"></iframe>
+          </div>
+          <div class="video-item">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_4"></iframe>
+          </div>
+          <!-- add more video items here -->
+        </div>
       </div>
-      <!-- add more video items here -->
+      <a href="#" class="button">Button 3</a>
+      <div class="video-gallery-container">
+        <div class="video-gallery">
+          <div class="video-item">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_5"></iframe>
+          </div>
+          <div class="video-item">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/VIDEO_ID_6"></iframe>
+          </div>
+          <!-- add more video items here -->
+        </div>
+      </div>
     </div>
   </body>
 </html>
+``

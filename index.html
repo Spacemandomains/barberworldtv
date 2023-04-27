@@ -1,1 +1,77 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive YouTube Videos Page</title>
+    <style>
+      /* Responsive styles for the YouTube videos */
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+      
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      /* Grid layout for the video thumbnails */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      
+      .grid-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .grid-item img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Responsive YouTube Videos Page</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>Video Title 1</h2>
+      </div>
+      <div class="grid-item">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>Video Title 2</h2>
+      </div>
+      <div class="grid-item">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>Video Title 3</h2>
+      </div>
+      <div class="grid-item">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>Video Title 4</h2>
+      </div>
+      <div class="grid-item">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_5" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>Video Title 5</h2>
+      </div>
+    </div>
+  </body>
+</html>

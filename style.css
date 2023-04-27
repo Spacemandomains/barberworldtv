@@ -104,6 +104,10 @@ nav {
   display: flex;
   width: fit-content;
   white-space: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  flex-direction: row;
 }
 
 .video-wrapper {

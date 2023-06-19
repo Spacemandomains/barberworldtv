@@ -6,7 +6,7 @@
     .button {
       width: 72px;
       height: 72px;
-      background-color: #f1f1f1;
+      background-color: #f1f1f1; /* Override styles for all background-color elements */
       border: 1px solid #ccc;
       display: inline-block;
       margin: 5px;
@@ -15,58 +15,57 @@
       cursor: pointer;
     }
 
-    
-    .button.twitter {
+    .button[data-brand="twitter"] {
       background-color: #1DA1F2; /* Twitter blue */
       color: #fff; /* Text color: white */
     }
 
-    .button.facebook {
+    .button[data-brand="facebook"] {
       background-color: #3B5998; /* Facebook blue */
       color: #fff; /* Text color: white */
     }
 
-    .button.tiktok {
+    .button[data-brand="tiktok"] {
       background-color: #FF0000; /* TikTok red */
       color: #fff; /* Text color: white */
     }
 
-    .button.reddit {
+    .button[data-brand="reddit"] {
       background-color: #FF4500; /* Reddit orange */
       color: #fff; /* Text color: white */
     }
 
-    .button.vk {
+    .button[data-brand="vk"] {
       background-color: #4C75A3; /* VK blue */
       color: #fff; /* Text color: white */
     }
 
-    .button.pinterest {
+    .button[data-brand="pinterest"] {
       background-color: #BD081C; /* Pinterest red */
       color: #fff; /* Text color: white */
     }
 
-    .button.blogger {
+    .button[data-brand="blogger"] {
       background-color: #FF5722; /* Blogger orange */
       color: #fff; /* Text color: white */
     }
 
-    .button.tumblr {
+    .button[data-brand="tumblr"] {
       background-color: #35465C; /* Tumblr dark blue */
       color: #fff; /* Text color: white */
     }
 
-    .button.mix {
+    .button[data-brand="mix"] {
       background-color: #FF4081; /* Mix pink */
       color: #fff; /* Text color: white */
     }
 
-    .button.discord {
+    .button[data-brand="discord"] {
       background-color: #7289DA; /* Discord blue */
       color: #fff; /* Text color: white */
     }
 
-    .button.twitch {
+    .button[data-brand="twitch"] {
       background-color: #6441A5; /* Twitch purple */
       color: #fff; /* Text color: white */
     }
@@ -81,7 +80,7 @@
   <div class="button" data-brand="tiktok" onclick="window.open('https://www.tiktok.com/@mbtitw?lang=en','_blank')">TikTok</div>
   <div class="button" data-brand="reddit" onclick="window.open('https://www.reddit.com/user/MBTITW','_blank')">Reddit</div>
   <div class="button" data-brand="vk" onclick="window.open('https://vk.com/','_blank')">VK</div>
-  <div class="button" data-brand="pinterest" onclick="window.open('https://www.pinterest.com/m
+  <div class="button" data-brand="vk" onclick="window.open('https://www.pinterest.com/mostbeautifulthinginthisworld/')">Pinterest</div>
   <div class="button" data-brand="Blogger" onclick="window.open('https://www.blogger.com/u/3/blog/posts/8755169209180279707?hl=en&tab=jj','_blank')">Blogger</div>
   <div class="button" data-brand="Tumblr" onclick="window.open('https://www.tumblr.com/blog/mostbeautifulthinginthisworld','_blank')">Tumblr</div>
   <div class="button" data-brand="Mix" onclick="window.open('https://mix.com/mbtitw','_blank')">Mix</div>

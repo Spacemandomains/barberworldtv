@@ -5,9 +5,16 @@
   <style>
     .container {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
     }
 
     .square {
@@ -27,15 +34,39 @@
 </head>
 <body>
   <div class="container">
-    <a href="https://www.example1.com" target="_blank" class="square">
-      <span>Square 1</span>
-    </a>
-    <a href="https://www.example2.com" target="_blank" class="square">
-      <span>Square 2</span>
-    </a>
-    <a href="https://www.example3.com" target="_blank" class="square">
-      <span>Square 3</span>
-    </a>
+    <div class="row">
+      <a href="https://www.example1.com" target="_blank" class="square">
+        <span>Square 1</span>
+      </a>
+      <a href="https://www.example2.com" target="_blank" class="square">
+        <span>Square 2</span>
+      </a>
+      <a href="https://www.example3.com" target="_blank" class="square">
+        <span>Square 3</span>
+      </a>
+    </div>
+    <div class="row">
+      <a href="https://www.example4.com" target="_blank" class="square">
+        <span>Square 4</span>
+      </a>
+      <a href="https://www.example5.com" target="_blank" class="square">
+        <span>Square 5</span>
+      </a>
+      <a href="https://www.example6.com" target="_blank" class="square">
+        <span>Square 6</span>
+      </a>
+    </div>
+    <div class="row">
+      <a href="https://www.example7.com" target="_blank" class="square">
+        <span>Square 7</span>
+      </a>
+      <a href="https://www.example8.com" target="_blank" class="square">
+        <span>Square 8</span>
+      </a>
+      <a href="https://www.example9.com" target="_blank" class="square">
+        <span>Square 9</span>
+      </a>
+    </div>
   </div>
 </body>
 </html>

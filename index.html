@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Large Square</title>
+  <title>Large Squares</title>
   <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
     .square {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 300px;
       height: 300px;
       background-color: #000;
-      /* You can add additional styles as needed */
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+      text-align: center;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="square"></div>
+  <div class="container">
+    <a href="https://www.example1.com" target="_blank" class="square">
+      <span>Square 1</span>
+    </a>
+    <a href="https://www.example2.com" target="_blank" class="square">
+      <span>Square 2</span>
+    </a>
+    <a href="https://www.example3.com" target="_blank" class="square">
+      <span>Square 3</span>
+    </a>
+  </div>
 </body>
 </html>

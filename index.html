@@ -5,28 +5,23 @@
   <style>
     .container {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      justify-content: center;
       height: 100vh;
-    }
-
-    .row {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 10px;
     }
 
     .square {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 300px;
-      height: 300px;
+      flex-basis: calc(33.33% - 20px);
+      height: 0;
+      padding-bottom: calc(33.33% - 20px);
       background-color: #000;
       color: #fff;
       font-size: 24px;
-      margin: 0 10px;
+      margin: 10px;
       text-align: center;
       text-decoration: none;
     }
@@ -34,39 +29,33 @@
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <a href="https://www.example1.com" target="_blank" class="square">
-        <span>Square 1</span>
-      </a>
-      <a href="https://www.example2.com" target="_blank" class="square">
-        <span>Square 2</span>
-      </a>
-      <a href="https://www.example3.com" target="_blank" class="square">
-        <span>Square 3</span>
-      </a>
-    </div>
-    <div class="row">
-      <a href="https://www.example4.com" target="_blank" class="square">
-        <span>Square 4</span>
-      </a>
-      <a href="https://www.example5.com" target="_blank" class="square">
-        <span>Square 5</span>
-      </a>
-      <a href="https://www.example6.com" target="_blank" class="square">
-        <span>Square 6</span>
-      </a>
-    </div>
-    <div class="row">
-      <a href="https://www.example7.com" target="_blank" class="square">
-        <span>Square 7</span>
-      </a>
-      <a href="https://www.example8.com" target="_blank" class="square">
-        <span>Square 8</span>
-      </a>
-      <a href="https://www.example9.com" target="_blank" class="square">
-        <span>Square 9</span>
-      </a>
-    </div>
+    <a href="https://www.example1.com" target="_blank" class="square">
+      <span>Square 1</span>
+    </a>
+    <a href="https://www.example2.com" target="_blank" class="square">
+      <span>Square 2</span>
+    </a>
+    <a href="https://www.example3.com" target="_blank" class="square">
+      <span>Square 3</span>
+    </a>
+    <a href="https://www.example4.com" target="_blank" class="square">
+      <span>Square 4</span>
+    </a>
+    <a href="https://www.example5.com" target="_blank" class="square">
+      <span>Square 5</span>
+    </a>
+    <a href="https://www.example6.com" target="_blank" class="square">
+      <span>Square 6</span>
+    </a>
+    <a href="https://www.example7.com" target="_blank" class="square">
+      <span>Square 7</span>
+    </a>
+    <a href="https://www.example8.com" target="_blank" class="square">
+      <span>Square 8</span>
+    </a>
+    <a href="https://www.example9.com" target="_blank" class="square">
+      <span>Square 9</span>
+    </a>
   </div>
 </body>
 </html>

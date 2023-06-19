@@ -1,159 +1,21 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-}
-
-header {
-	background-color: #000;
-	color: #fff;
-	padding: 20px;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.logo a {
-	font-size: 24px;
-	font-weight: bold;
-	color: #e50914;
-	text-decoration: none;
-}
-
-.nav-menu {
-	list-style: none;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-.nav-menu li {
-	margin-left: 20px;
-}
-
-.nav-menu li a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: bold
-		
-		.video-gallery {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-}
-
-.video-slider {
-	display: flex;
-	width: 400%;
-	animation: slide 10s infinite;
-}
-
-.video-player {
-	flex: 1 0 0;
-	margin-right: 10px;
-}
-
-.video-player:last-child {
-	margin-right: 0;
-}
-
-.video-player video {
-	width: 100%;
-}
-
-.video-nav {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-}
-
-.video-nav button {
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	font-size: 30px;
-	color: #fff;
-	padding: 0 10px;
-}
-
-.video-nav button:hover {
-	color: #e50914;
-}
-	
-.video-gallery-container {
-  width: 100%;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
-.video-gallery {
+.container {
   display: flex;
-  flex-direction: row;
-  width: fit-content;
-  white-space: nowrap;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 10px;
-	
-video-wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.row {
   display: flex;
-  flex-direction: row;
-  margin-right: 10px;
-}
-.video {
-  width: 300px;
-  height: 200px;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .video {
-    width: 200px;
-    height: 133px;
-  }
+.button {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  background-color: #000;
+  /* You can add additional styles as needed */
 }
-
-
-@keyframes slide {
-	0% {
-		transform: translateX(0);
-	}
-	20% {
-		transform: translateX(0);
-	}
-	25% {
-		transform: translateX(-100%);
-	}
-	45% {
-		transform: translateX(-100%);
-	}
-	50% {
-		transform: translateX(-200%);
-	}
-	70% {
-		transform: translateX(-200%);
-	}
-	75% {
-		transform: translateX(-300%);
-	}
-	95% {
-		transform: translateX(-300%);
-	}
-	100% {
-		transform: translateX(-400%);
-	}
-}
-
